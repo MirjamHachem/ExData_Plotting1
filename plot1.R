@@ -1,4 +1,4 @@
-# This is the R script for the first plot Global Active Power
+# This is the R script for the first PNG file containing the plot Global Active Power
 
 # Reading the data set into R
 power_consumption <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
@@ -17,5 +17,6 @@ hist(Global_active_power, main = "Global Active Power", xlab = "Global Active Po
 
 # Closing the plotting procedure
 dev.off()
+
 
 # Thank you for grading my assignment! :-)
