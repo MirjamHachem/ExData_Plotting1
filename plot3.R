@@ -1,4 +1,4 @@
-# This is the R script for the third plot 
+# This is the R script for the third PNG file containing one plot 
 
 # Reading the data set into R
 power_consumption <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
@@ -11,7 +11,8 @@ Sub_metering_1 <- as.numeric(subset_power_consumption$Sub_metering_1)
 Sub_metering_2 <- as.numeric(subset_power_consumption$Sub_metering_2)
 Sub_metering_3 <- as.numeric(subset_power_consumption$Sub_metering_3)
 
-# Creating the variable for the Y-axsis by Converting the variables Date and Time from character strings into date and time formats and pasting them together.
+# Creating the variable for the x-axis by Converting the variables Date and Time from character strings 
+# into date and time formats and pasting them together.
 date_time_merged <- strptime(paste(subset_power_consumption$Date, subset_power_consumption$Time, sep = " "), "%d/%m/%Y %H:%M:%S")
 
 # Creating the PNG file
