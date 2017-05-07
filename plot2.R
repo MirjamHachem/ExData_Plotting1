@@ -9,7 +9,7 @@ subset_power_consumption <- power_consumption[power_consumption$Date %in% c("1/2
 # Creating the variable for the y-axis by storing the variable Global_active_power in a numeric vector
 Global_active_power <- as.numeric(subset_power_consumption$Global_active_power)
 
-# Creating the variable for the Y-axsis by Converting the variables Date and Time from character strings 
+# Creating the variable for the x-axis by Converting the variables Date and Time from character strings 
 # into date and time formats and pasting them together.
 date_time_merged <- strptime(paste(subset_power_consumption$Date, subset_power_consumption$Time, sep = " "), "%d/%m/%Y %H:%M:%S")
 
