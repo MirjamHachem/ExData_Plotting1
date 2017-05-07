@@ -20,3 +20,5 @@ plot(date_time_merged, Global_active_power, type = "l", xlab="", ylab="Global Ac
 
 # Closing the plotting procedure
 dev.off()
+
+# Thank you for grading my assignment! :-)
