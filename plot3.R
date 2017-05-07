@@ -1,4 +1,4 @@
-# This is the R script for the second plot 
+# This is the R script for the third plot 
 
 # Reading the data set into R
 power_consumption <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
